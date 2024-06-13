@@ -1,0 +1,54 @@
+.bike{
+    // background: linear-gradient(180deg, #000 0%, #12001C 100%)
+    // @apply bg-gradient-to-b from-black via-transparent to-purple-900;
+    // @apply  border;
+    @apply w-full h-fit;
+}
+
+.spec{
+    font-family: Brutal;
+// font-size: 20px;
+font-size: 16px;
+font-weight: 500;
+line-height: 24.64px;
+text-align: center;
+overflow: visible;
+
+}
+.mobIcon{
+    color: #FFF;
+text-align: center;
+font-family: Brutal;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 142.857% */
+}
+
+
+
+// .bike{
+//     // background: linear-gradient(180deg, #000 0%, #12001C 100%)
+//     // @apply bg-gradient-to-b from-black via-transparent to-purple-900;
+//     // @apply  border;
+// }
+
+// .spec{
+//     font-family: Brutal;
+// // font-size: 20px;
+// font-size: 16px;
+// font-weight: 500;
+// line-height: 24.64px;
+// text-align: center;
+// overflow: visible;
+
+// }
+// .mobIcon{
+//     color: #FFF;
+// text-align: center;
+// font-family: Brutal;
+// font-size: 14px;
+// font-style: normal;
+// font-weight: 500;
+// line-height: 20px; /* 142.857% */
+// }

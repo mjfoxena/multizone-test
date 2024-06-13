@@ -1,0 +1,42 @@
+@import "/styles/variables.module.scss";
+
+.eurostile {
+  font-family: Eurostile;
+}
+.brutal {
+  font-family: brutal;
+}
+.backgroundImage {
+  background: url("../../../public/images/BackgroundPages.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $background-grey;
+  mix-blend-mode: overlay;
+  opacity: 0.72;
+}
+.backgroundColor {
+  background-color: #f8f8f8;
+}
+.disketmono {
+  font-family: Disket-mono;
+}
+.scroll {
+  overflow-y: auto;
+}
+.scroll::-webkit-scrollbar {
+  width: 3px;
+  // background-color: #ffff;
+  margin-left: 500px;
+}
+.scroll::-webkit-scrollbar-track {
+  background: #898787;
+
+  // background: #2f2f2f;
+}
+.scroll::-webkit-scrollbar-thumb {
+  // background: #898787;
+  background: #2f2f2f;
+}
+.ul-lists{
+  display: list-item;
+}

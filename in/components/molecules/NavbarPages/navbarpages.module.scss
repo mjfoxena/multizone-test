@@ -1,0 +1,116 @@
+@import "/styles/variables.module.scss";
+
+.root {
+  .elementWrap {
+    @apply hidden xl:flex xl:flex-row xl:mr-4 xl:items-center;
+  }
+  .bottomOverlayWrap {
+    @apply hidden lg:block relative;
+  }
+  // @apply w-full flex h-16 justify-between flex-row items-center;
+  .imageWrapper {
+    @apply hidden xl:flex xl:justify-center xl:pl-4;
+  }
+  .logowrapper {
+    @apply flex ml-7 justify-center xl:hidden;
+  }
+  .navItemsWrapper {
+    @apply hidden xl:py-2  xl:ml-40 xl:flex xl:space-x-10 lg:space-x-16;
+  }
+  .menuWrapper {
+    @apply cursor-pointer h-16 pl-3 flex xl:hidden justify-center px-0 xl:pr-4;
+  }
+  .loginname {
+    font-family: brutal;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    @apply flex mr-4;
+  }
+  @apply w-full flex h-12 justify-between flex-row items-center;
+}
+.overlay {
+  // background-color: $overlay-background;
+  @apply top-0 left-0 fixed w-screen flex flex-col gap-y-2 h-screen pl-8 pt-4 pb-2 xl:hidden;
+  z-index: 100000;
+}
+.borderColor {
+  // border-bottom: 2px solid ;
+  @apply flex h-auto mt-3 mb-8 mr-8 z-50 overflow-y-auto;
+}
+
+.desktopBottom {
+  @apply absolute overflow-y-scroll top-0 right-0 left-0 bottom-0 text-white bg-[#111214];
+  z-index: 10000;
+  height: 0;
+  max-height: 0;
+  transition: all 0.8s;
+  padding: 0px 10vw 0px 5vw;
+}
+
+.desktopBottom-open {
+  height: 90vh;
+  max-height: 90vh;
+}
+
+.openRow {
+  height: 16vh;
+  border-bottom: 1px solid #6c6c6c;
+  color: #717171;
+  position: relative;
+  @apply flex space-x-10 items-center cursor-pointer bg-[#111214];
+}
+
+.openRowBottom {
+  color: #717171;
+  z-index: 100;
+  @apply flex justify-between my-10 cursor-pointer relative  bg-[#111214];
+}
+
+.eachTitle {
+  margin-top: 170px;
+  display: flex;
+  align-items: center;
+  @apply space-x-5;
+}
+
+.eachTitleVisible {
+  margin-top: 0px;
+}
+// Test Ride
+.testRide {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.signIn {
+  // color: #FFF;
+  text-align: center;
+  font-family: Brutal;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+  text-transform: uppercase;
+}
+.titleActive {
+  color: #fff;
+  font-family: Brutal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 43.568px; /* 181.533% */
+  letter-spacing: 0.207px;
+}
+.title {
+  // color: #9F9F9F;
+  font-family: Brutal;
+  font-size: 24px;
+  font-style: normal;
+  // font-weight: 300;
+  line-height: 43.568px; /* 181.533% */
+  letter-spacing: 0.207px;
+}

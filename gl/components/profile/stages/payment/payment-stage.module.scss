@@ -1,0 +1,29 @@
+// .background {
+//   background-color: #202020;
+// }
+.proccedBtn {
+  width: 320px;
+  height: 56px;
+  justify-content: space-between;
+}
+.arrowImage {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.proccedText {
+  font-family: brutal;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  @apply text-sm sm:text-xl;
+}
+// For Sm and below
+@media screen and (max-width: 768px) {
+  .proccedBtn {
+    width: 100%;
+    height: 56px;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,44 @@
+@import "/styles/variables.module.scss";
+
+.body{
+   @apply bg-black relative;
+  }
+
+//   .Stickybutton {
+//    @apply fixed bottom-8 right-24   text-white  z-50  ;
+//  }
+ 
+//  .Stickyicon{
+//    @apply  hidden fixed bottom-8 right-24   text-white sm:flex justify-center items-center z-50 ;
+//  }
+
+ .button {
+  font-family: Disket-mono;
+  cursor: pointer;
+  @apply hidden sm:flex text-[24px] text-white  justify-center items-center;
+}
+
+//  .clip{
+//   background-color: blue;
+//   clip-path: polygon(87% 0%, 87% 55%, 60% 100%, 0 100%, 0 0);
+//   @apply fixed bottom-48 right-5 w-fit;
+//  }
+
+// videosSlider
+.videoHorizontal {
+  @apply h-[100%] sm:mt-[70px] pt-[15px] sm:h-[746px] overflow-x-auto w-full overflow-y-hidden;
+}
+.videoHorizontal::-webkit-scrollbar {
+  width: 0px;
+}
+
+.videoSlide {
+  @apply mr-[9px] sm:mr-[24px] w-screen sm:w-full;
+  @media (max-width: 800px) {
+    width: 90vw !important;
+  }
+}
+
+.floatingButton{
+  clip-path: polygon(100% 0%, 100% 52%, 90% 100%, 0 100%, 0 0);
+}

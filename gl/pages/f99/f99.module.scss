@@ -1,0 +1,334 @@
+@import "/styles/variables.module.scss";
+.eurostile {
+  font-family: Eurostile;
+}
+.root {
+  overflow-y: auto;
+  overflow-x: hidden !important;
+}
+
+.headWrapper {
+  @apply absolute top-[76px] sm:top-[150px] z-50 flex flex-col w-full items-start sm:items-end pl-[25px] sm:pr-[65px] pr-[30px];
+}
+.limited {
+  font-family: Eurostile;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #ffffff;
+  @apply text-[26px] mt-[-10px] sm:text-[65px] lg:text-[85px] sm:mt-[-15px];
+}
+.timeTravel {
+  font-family: Eurostile;
+  font-style: normal;
+  font-weight: 700;
+  text-align: right;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  @apply text-[10.18px] w-full flex justify-center mt-[-10px] sm:justify-end sm:text-[24px] sm:mt-[-25px];
+}
+.vectorWrapper {
+  width: 100%;
+  background: url("../../public/images/limited/backgroundVector.svg") !important;
+  background-color: #17191d !important;
+  @apply pb-[100px] sm:pb-[186px];
+}
+.vectorBgImage {
+  width: 100%;
+}
+.escapeWrapper {
+  @apply flex flex-col pl-[26px] pr-[26px] pt-[30px]  sm:pl-[88px];
+}
+.escape {
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  color: #d9d8d0;
+  @apply text-[14px] sm:text-[28px];
+}
+.motorcycle {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #d9d8d0;
+  @media (max-width: 500px) {
+    line-height: 20px;
+  }
+  @apply text-[12px] sm:text-[16px];
+}
+.motorcycleMobile {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #d9d8d0;
+  @media (max-width: 500px) {
+    line-height: 20px;
+  }
+  @apply text-[12px] sm:text-[16px];
+}
+.statement {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #ebebeb;
+  @media (max-width: 500px) {
+    line-height: 14px;
+  }
+  @apply flex flex-col text-[12px] gap-[10px] sm:gap-2 sm:text-[16px] sm:mt-[21px];
+}
+.integratedImage {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  @apply flex px-[26px] mt-[30px]  sm:mt-[80px] sm:px-[88px] sm:flex;
+}
+.mobileIntegratedImage {
+  @apply flex flex-col gap-[12px] mt-[61px] pl-[26px] pr-[26px] sm:hidden;
+}
+.limitedWrapper {
+  @apply ml-[26px] mt-[21px] sm:mt-[64px] sm:ml-[88px];
+}
+.aslimited {
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  color: #d9d8d0;
+  @apply text-[14px] sm:text-[32px];
+}
+.bespoke {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  color: #d9d8d0;
+  @media (max-width: 500px) {
+    line-height: 16px;
+  }
+  @apply text-[12px] mt-[10px] sm:text-[20px] sm:mt-[20px];
+}
+.fullBikeWrapper {
+  // width: 100%;
+  // align-items: center;
+  // justify-content: center;
+  flex-direction: column;
+  @apply hidden sm:flex sm:mt-[63px];
+}
+.fullBikeWrapperMobile {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @apply pl-[26px] pt-[20px] pr-[26px] flex gap-[15px] sm:hidden;
+}
+.bikeCarText {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.2px;
+  color: #d9d8d0;
+  @apply hidden sm:ml-[88px] sm:mt-[44px] sm:text-[30px] sm:flex sm:flex-col;
+}
+.bikeCarTextMobile {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  color: #d9d8d0;
+  @apply flex pl-[26px] mt-[21px] pr-[26px] sm:hidden;
+}
+.limitedNumber {
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  color: #d9d8d0;
+  @media (max-width: 500px) {
+    line-height: 24px;
+  }
+  @apply sm:w-[500px] text-[16px] pl-[26px] mt-[21px] pr-[26px] sm:pl-[0px] sm:pr-[0px] sm:text-[32px] sm:ml-[88px] sm:mt-[45px];
+}
+.subhead1 {
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  @apply text-[20px] sm:text-[36px] sm:mb-[15px];
+}
+.subhead2 {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #828282;
+  @apply text-[13px] sm:text-[20px];
+}
+.reserve {
+  background-color: #ffffff;
+  width: calc(100vw - 176px);
+  @media (max-width: 800px) {
+    width: calc(100vw - 34px);
+  }
+  @media only screen and (max-width: 800px) and (min-width: 768px) {
+    width: calc(100vw - 176px);
+  }
+  @apply flex  ml-[17px] mr-[17px] flex-col sm:flex-row sm:ml-[88px] sm:mr-[88px] sm:h-[500px];
+}
+.spotText {
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  color: #000000;
+  text-transform: uppercase;
+  @apply text-[19.18px] pl-[20px] sm:text-[32px];
+}
+.subReserve {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #000000;
+  @apply hidden sm:text-[16px] pl-[20px] sm:mt-[7px] sm:flex-col sm:flex;
+}
+.subReserveMobile {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  color: #000000;
+  @apply flex mx-[20px] text-[9.59px] sm:hidden;
+}
+.accesswrapper {
+  background-color: #000000;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @media (max-width: 500px) {
+    background-color: #000000;
+  }
+  @apply flex flex-row px-[20px] h-[40px] mx-[20px] mt-[36px] mb-[27px] sm:mb-[0px] sm:h-[56px] sm:mt-[70px] sm:flex sm:flex-row sm:px-[23px] sm:mr-16 lg:mr-8 xl:mr-0;
+}
+.accesswrapperSold {
+  background-color: #dadada;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 500px) {
+    background-color: #dadada;
+  }
+  @media only screen and (max-width: 825px) and (min-width: 768px) {
+    width: 70%;
+  }
+  @apply flex flex-row px-[20px] h-[40px] mx-[20px] mt-[36px] mb-[27px] sm:mb-[0px]  sm:h-[56px] sm:mt-[70px] sm:flex sm:flex-row sm:px-[23px];
+}
+.accessText {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  // text-transform: uppercase;
+  @media (max-width: 500px) {
+    line-height: 28px;
+    color: #ffffff;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+  }
+  @apply text-[14px] sm:py-[14px] sm:text-[16px];
+}
+.accessTextSoldOut {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #585858;
+  text-transform: uppercase;
+  @media (max-width: 500px) {
+    line-height: 28px;
+    color: #585858;
+    line-height: 17px;
+  }
+  @apply text-[14px] sm:py-[14px] sm:text-[16px];
+}
+.arrowText {
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000000;
+  @media (max-width: 500px) {
+    line-height: 10px;
+  }
+  @apply flex justify-center pb-[10px]  sm:flex text-[10px] sm:text-[14px] sm:mt-[150px];
+}
+.backgroundBike {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom bottom;
+  background-image: linear-gradient(
+    180deg,
+    rgba(23, 25, 29, 0) 0%,
+    #17191d 89.06%
+  );
+  background-color: #404040;
+  @apply hidden sm:flex sm:mt-[-180px];
+}
+.extraline {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #d9d8d0;
+  @media (max-width: 800px) {
+    font-family: Disket-mono;
+    line-height: 20px;
+  }
+  @apply text-[10px] sm:text-[16px] mt-[21px] px-[26px]  sm:my-[61px] sm:px-[88px] flex items-center justify-center;
+}
+.wheelLoading {
+  position: absolute;
+  z-index: 10000;
+  @apply mt-[-3500px] ml-[25px] w-[500px];
+}
+.imageContainer {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.fullSpecs {
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  color: #ffffff;
+  @media (max-width: 800px) {
+    line-height: 15px;
+  }
+  @apply text-[10px] sm:text-[16px];
+}

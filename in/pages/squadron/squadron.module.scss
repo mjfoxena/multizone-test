@@ -1,0 +1,40 @@
+
+.squadron {
+  // background-image: url("../../public/images/about/grunge-background.svg");
+  background-size: cover;
+  background-repeat: repeat;
+  background: #121212;
+  width: 100%;
+  height: fit-content;
+}
+
+.squadron_child {
+  width: 95vw;
+  height: fit-content;
+  padding-left: 70px;
+}
+
+.squadron_leaderboar{
+  // width: 95vw;
+  padding-left: 70px;
+}
+
+
+// Image slider 
+.otherHorizontal {
+  @apply h-[300px] w-[95vw] sm:w-full mt-[20px] sm:mt-[-20px] pt-[15px] sm:pt-[20px] lg:pt-[45px] sm:h-[600px] overflow-x-auto overflow-y-hidden;
+}
+.otherHorizontal::-webkit-scrollbar {
+  width: 0px;
+}
+
+@media only screen and (min-width: 576px) {
+  .image {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .about-text {
+    width: 100%;
+  }
+}

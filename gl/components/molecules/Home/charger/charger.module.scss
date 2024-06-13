@@ -1,0 +1,126 @@
+@import "/styles/variables.module.scss";
+
+.charger {
+  font-family: Eurostile;
+  width: 100%;
+
+  background-color: rgb(0, 0, 0);
+  @apply flex flex-col justify-center items-center  h-[100vh]  sm:h-[130vh]  sm:max-h-[900px] 2xl:max-h-[100vh]  sm:pt-[6rem] sm:pb-[4rem] 2xl:pt-[1rem]  2xl:pb-[4rem];
+}
+
+.subHead {
+  font-family: Brutal;
+  font-weight: 500;
+  text-align: center;
+  @apply text-[#fff] text-[10px] leading-[14px] sm:text-[16px];
+}
+.Head {
+  font-family: Eurostile;
+  font-weight: 400;
+  text-align: center;
+
+  @apply text-[#fff] text-[18px] sm:text-[28px] sm:leading-[36px];
+}
+
+.designedTo {
+  font-family: Brutal;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  @apply text-[#fff] text-[12px] sm:text-[14px];
+}
+
+.chargeSeam {
+  color: #fff;
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  @apply text-[18px] sm:text-[24px];
+}
+
+.chargerType {
+  text-align: center;
+  font-family: Eurostile;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  @apply text-[16px] sm:text-[24px];
+}
+
+.titleDesc {
+  color: #b4bcc4;
+  font-family: Brutal;
+  font-style: normal;
+  font-weight: 400;
+  @apply flex text-[12px] sm:text-[14px]  h-fit  sm:leading-[20px]  w-full sm:w-fit justify-center sm:text-center;
+}
+
+.spec {
+  color: #fff;
+  font-family: Eurostile;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @apply text-[14px] sm:text-[18px];
+}
+
+.desc {
+  color: #fff;
+  font-family: Disket-mono;
+  // font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @apply text-[12px] 2xl:text-[14px];
+}
+
+.threeX {
+  line-height: normal;
+  color: #ff0422;
+  text-align: center;
+  font-family: Eurostile;
+  line-height: normal;
+  @apply text-[26px] leading-[26px] sm:text-[40px]  font-[500]  sm:leading-[42px];
+}
+.faster {
+  color: #ff0422;
+  font-family: Eurostile;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @apply text-[14px] sm:text-[14px] uppercase ;
+}
+
+// mobile
+
+.specMob {
+  color: #fff;
+  font-family: Eurostile;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.768px;
+  @apply text-[14px];
+}
+
+.descMob {
+  color: #868686;
+  font-family: Disket-mono;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.768px;
+  text-transform: uppercase;
+}
+.fasterMob {
+  color: #ff0422;
+  font-family: Eurostile;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}

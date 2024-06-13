@@ -1,0 +1,46 @@
+.turnTable {
+  position: relative;
+  @media (max-width: 800px) {
+    // height: 60vh;
+  }
+  .turnTableImage {
+    @media (min-width: 800px) {
+      height: calc(100vh - 64px);
+      max-height: calc(100vh - 64px);
+      width: 100vw;
+      object-fit: cover;
+    }
+  }
+}
+
+.variantInfoTop {
+  @apply absolute left-20;
+  top: 100px;
+  z-index: 200;
+
+  @media (max-width: 800px) {
+    @apply absolute left-0 right-0 flex flex-col justify-center items-center transition-all duration-500;
+  }
+}
+
+.turntableThumb {
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+  z-index: 200;
+  @apply left-20 cursor-pointer;
+  @apply space-x-1.5 lg:space-x-3;
+  .thumb {
+    @apply h-0.5 lg:h-1 w-7 lg:w-14;
+    background-color: #d9d9d9;
+  }
+  .selected-thumb {
+    background-color: black;
+  }
+  @media (max-width: 800px) {
+    position: relative;
+    @apply flex justify-center;
+    left: 0;
+    bottom: 46px;
+  }
+}

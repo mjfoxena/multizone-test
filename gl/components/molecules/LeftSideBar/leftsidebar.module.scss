@@ -1,0 +1,17 @@
+.root {
+  height: calc(100vh);
+  @apply flex flex-col-reverse sm:flex-row w-full;
+}
+.subroot {
+  // background: url("../../../public/images/vector.svg");
+  background-size: 7.0vw 7.0vw;
+  background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  @apply flex flex-col justify-between w-full h-3/5 sm:w-1/2  sm:overflow-y-auto sm:h-full;
+}
+@media only screen and (max-width: 576px) {
+  .root {
+    height: 100%;
+    @apply flex flex-col-reverse;
+  }
+}

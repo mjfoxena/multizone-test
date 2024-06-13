@@ -1,0 +1,24 @@
+.wallpaper_container {
+  width: 100%;
+  margin: 20px auto;
+  columns: 4;
+  column-gap: 20px;
+}
+.wallpaper_container .wallpaper_item {
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  break-inside: avoid;
+}
+
+@media screen and (max-width: 1200px) {
+  .wallpaper_container {
+    width: calc(100% - 0px);
+    columns: 3;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wallpaper_container {
+    columns: 2;
+  }
+}

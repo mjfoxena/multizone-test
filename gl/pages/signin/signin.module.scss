@@ -1,0 +1,294 @@
+@import "../../styles/variables.module.scss";
+.root {
+  @apply flex flex-col-reverse sm:flex-row w-screen sm:h-screen;
+}
+.subroot {
+  // background: url("../../public/images/vector.svg");
+  @apply flex flex-col justify-between w-full sm:w-1/2  sm:overflow-y-auto sm:h-full;
+}
+.disketmono {
+  font-family: Disket-mono;
+}
+.brutal {
+  font-family: brutal;
+}
+
+.heading {
+  font-family: brutal;
+  font-weight: 500;
+  float: left;
+  @apply text-[28px] mt-[11px] sm:text-[36px] sm:mt-[48px] uppercase;
+}
+.headingImage {
+}
+.subtext {
+  font-family: brutal;
+  font-weight: 400;
+  color: #636363;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+  @apply w-full text-[12px] mt-[8px]  sm:text-[14px] sm:mt-[8px];
+}
+.email {
+  font-family: brutal;
+  font-weight: 400;
+  color: #9f9f9f;
+
+  @apply mt-9 text-[14px] sm:text-[14px] sm:mt-[32px];
+}
+.inputbox {
+  background: #eaeaea;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  @apply h-[50px] w-full mt-[8px] sm:mt-[14px];
+}
+.inputboxError {
+  background: #eaeaea;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #d44c43;
+  @apply h-[50px] w-full mt-[8px] sm:mt-[14px];
+}
+.input {
+  background: #eaeaea;
+  font-family: brutal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  @apply text-[12px] ml-[12px] sm:ml-[24px] w-full;
+}
+.check {
+  //     display: flex;
+  //   flex-direction: column;
+  //   flex-wrap: nowrap;
+  @apply mr-[19px];
+}
+
+.checkboxText {
+  font-family: brutal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #272727;
+  line-height: 20px;
+  @apply text-[12px] sm:text-[14px];
+}
+.signup {
+  font-family: brutal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #363636;
+  @apply text-sm mt-10 mb-[24px] sm:text-[16px] sm:mb-[40px];
+}
+.procced {
+  background: #d8d8d8;
+  justify-content: space-between;
+  align-items: center;
+  color: #676767;
+  cursor: not-allowed;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 10px !important;
+  @apply w-full py-6 flex pl-7 pr-8 flex-row sm:pl-16 sm:pr-20 sm:py-[42px];
+}
+.proceedError {
+  cursor: pointer;
+  background: #000000;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  @apply w-full py-[14px] flex pl-7 pr-8 flex-row sm:pl-16 sm:pr-20 sm:py-[28px];
+}
+.proccedText {
+  font-family: brutal;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  @apply text-sm sm:text-xl;
+}
+.resend {
+  font-family: brutal;
+  font-weight: 400;
+  text-decoration-line: underline;
+  color: #565656;
+  float: right;
+  cursor: pointer;
+  @apply text-xs sm:text-sm;
+}
+.invalid {
+  font-family: brutal;
+  font-weight: 500;
+  float: left;
+  color: #d44c43;
+  @apply text-xs sm:text-sm;
+}
+.otpVerified {
+  font-family: brutal;
+  font-weight: 500;
+  float: left;
+  color: #7dc771;
+  @apply text-xs sm:text-sm;
+}
+.arrowImage {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.check input[type="checkbox"] {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  color: $black;
+  background: #f3f3f3;
+  border: 1px solid #bcbcbc;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 1.5px;
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  &:checked {
+    color: #000000;
+    //   border-color: #7dc771;
+    //   background: #272727;
+    &::before {
+      opacity: 1;
+    }
+    ~ label::before {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .procced {
+    width: 50%;
+  }
+  .proceedError {
+    width: 50%;
+  }
+}
+/* Create a custom checkbox */
+//   .checkmark {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 25px;
+//     width: 25px;
+//      background:#000000;
+//   }
+
+//   /* On mouse-over, add a grey background color */
+//   .container:hover input ~ .checkmark {
+//     background-color: rgb(190, 190, 190);
+//   }
+
+//   /* When the checkbox is checked, add a blue background */
+//   .container input:checked ~ .checkmark {
+//      background:#817d7d;
+//   }
+
+//   /* Create the checkmark/indicator (hidden when not checked) */
+//   .checkmark:after {
+//     content: "";
+//     position: absolute;
+//     display: none;
+//     background:#000000;
+//   }
+
+//   /* Show the checkmark when checked */
+//   .container input:checked ~ .checkmark:after {
+//     display: block;
+//      background:#000000;
+//   }
+
+//   /* Style the checkmark/indicator */
+//   .container .checkmark:after {
+//     left: 9px;
+//     top: 5px;
+//     width: 5px;
+//     height: 10px;
+//     border: 3px solid white;
+//      background:#000000;
+//     -webkit-transform: rotate(45deg);
+//     -ms-transform: rotate(45deg);
+//     transform: rotate(45deg);
+//   }
+// .checkboxCursor{
+//     width: 1rem;
+//   height: 1rem;
+//   background: #efd3d3;
+//   position: absolute;
+//   top: 0rem;
+//   border: 1px solid #757575;
+
+//   .check input[type=checkbox]:not(:disabled):checked  {
+//     background: #fdd5d5;
+//   }
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     display: none;
+//   }
+
+//   .check input[type=checkbox] + &::after {
+//     display: block;
+//     top: 0.1rem;
+//     left: 0.3rem;
+//     width: 25%;
+//     height: 55%;
+//     border: solid #263238;
+//     border-width: 0 0.2rem 0.2rem 0;
+//     @keyframes spin {
+//         from {
+//             opacity: 0;
+//             transform: rotate(0deg);
+//           }
+//           to {
+//             opacity: 1;
+//             transform: rotate(45deg);
+//           }
+//     }
+//     /* animation-duration: 0.3s; */
+//   }
+
+//   &::disabled {
+//     cursor: not-allowed;
+//   }
+// }

@@ -1,0 +1,122 @@
+
+@import "/styles/variables.module.scss";
+
+.carouselWrapper{
+    width: 100vw;
+    height: calc(100vh - 64px);
+    @media (max-width: 800px) {
+        height: calc(45vh);
+    }
+}
+
+.variantInfo{
+    display: flex;
+    // height: 300px;
+    align-items: flex-end;
+   
+    @extend .variant-carousel-absolute-content;
+    @extend .variant-carousel-absolute-content-right;
+    @apply justify-between;
+
+
+    @media (min-width: 800px) {
+        background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+        padding-bottom: 48px;
+        padding-top: 200px;
+    }
+    .infoTop{
+        @media (max-width: 800px) {
+            position: absolute;
+            top: 0;
+            z-index: 100;
+            margin-top: 16px;
+        }
+    }
+    .infoBottom{
+        @media (max-width: 800px) {
+            position: absolute;
+            bottom: 0;
+            z-index: 100;
+            margin-bottom: 16px;
+        }
+    }
+    
+}
+
+.eachPhase{
+    border-bottom: 1px solid #7C7C7C;
+    @apply py-5 w-full flex items-center;
+    @media (max-width: 800px) {
+        @apply block; 
+    }
+}
+
+.rollout{
+    @apply relative;
+    width: 75vw;
+    height: 100%;
+    padding: 6.5vw 6vw;
+    background-size: 4.5vw 4.5vw;
+    background-image:
+      linear-gradient(to right, #F0F0F0 1px, transparent 1px),
+      linear-gradient(to bottom, #F0F0F0 1px, transparent 1px);
+}
+
+
+
+.phase-active{
+    background-color: $text-red-primary;
+}
+.phase-round{
+    border: 1px solid #111111;
+    @apply w-4 h-4 rounded-full mr-4;
+}
+
+.configStep{
+    width: min(45vw,620px);
+    
+    @media (max-width: 800px) {
+        width: 100%;
+    }
+    .configStepContent{
+        @media (min-width: 800px) {
+            height: calc(100vh - 420px);
+            overflow-y: scroll;
+        }
+        
+       
+    }
+}
+
+.totalFooter{
+    position: absolute;
+    bottom: 0;
+    background-color: $text-grey-primary;
+    width: 100%;
+    @media (max-width: 800px) {
+        position:  fixed;
+    }
+    .pricing{
+        @apply pl-6 lg:pl-12 pr-4 lg:pr-8 pt-8 pb-6;
+    }
+}
+
+.total{
+    @apply flex items-center justify-between pb-4;
+    // border-bottom: 1px solid #343434;
+}   
+
+.compareVariants{
+ @apply  grid mt-16;
+ grid-template-columns: repeat(3, 1fr);
+ @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+    @apply mt-8;
+ }
+}
+
+.configureBack{
+    @apply absolute top-12 cursor-pointer flex space-x-2;
+    z-index: 10000;
+    @extend .variant-carousel-absolute-content;
+}

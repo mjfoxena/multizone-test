@@ -1,0 +1,59 @@
+@import "/styles/variables.module.scss";
+
+// News Article
+.newsArticleHorizontal::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Firefox */
+.newsArticleHorizontal {
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* Safari */
+.newsArticleHorizontal::-webkit-scrollbar {
+  display: none; /* For Safari */
+}
+
+.newsArticleHorizontal {
+  @apply h-[100%] sm:mt-[16px] pt-[15px] overflow-x-auto w-full overflow-y-hidden;
+}
+
+.subTitle {
+  color: #fff;
+  font-family: Brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  @apply text-[14px] hidden sm:flex sm:text-[14px];
+}
+
+.title {
+  color: #fff;
+  font-family: Eurostile;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  @apply text-[24px] sm:text-[28px];
+}
+
+.videoTitle {
+  color: #fff;
+  font-family: Brutal;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  @apply text-[16px];
+}
+.videoTime {
+  color: #797d88;
+  font-family: Brutal;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  @apply text-[16px];
+}

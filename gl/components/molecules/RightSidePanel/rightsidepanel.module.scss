@@ -1,0 +1,24 @@
+.image {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; 
+  @apply hidden sm:flex;
+}
+.rightImage {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  @apply hidden sm:flex;
+}
+.image1 {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  @apply flex sm:hidden;
+}
+.right-img {
+  height: 100% !important;
+}

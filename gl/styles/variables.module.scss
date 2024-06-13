@@ -1,0 +1,44 @@
+/* variables.module.scss */
+$primary-grey: #343434;
+$background-grey: #ECECEC;
+$border-grey: #6C6C6C;
+
+
+$black: #000000;
+$black-secondary: #17191D;
+$white: #FFFFFF;
+$text-grey-primary: #F8F8F8;
+$text-grey-secondary: #F0F0F0;
+$text-grey-tertiary: #EAEAEA;
+$text-grey-quaternary: #555555;
+$text-grey-5th-variant: #919191;
+$text-grey-7: #5E5E5E;
+
+$text-grey-contact:#414141;
+$text-red-primary: #ED1C24;
+
+$light-grey: #9F9F9F;
+$text-grey-subtext:#555555;
+$text-title-black:#3A3A3A;
+// rename 
+$battery-grey: #595C61;
+$overlay-background:#151515;
+$overlay-heading:#9F9F9F;
+
+$silver-grey: #8690A0;
+$no-color: green;
+$limited-text:#757575;
+// variant page variables 
+.variant-carousel-absolute-content{
+    padding-left: 4vw !important;
+}
+.variant-carousel-absolute-content-right{
+    padding-right: 4vw !important;
+}
+
+:export {
+    primaryGrey: $primary-grey;
+    backGroundGrey: $background-grey;
+    bordergrey: $border-grey;
+    subTextGrey:$text-grey-subtext;
+}

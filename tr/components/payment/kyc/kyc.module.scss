@@ -1,0 +1,21 @@
+.forcedButton {
+  position: absolute !important;
+  bottom: 0px !important;
+  width: 50% !important;
+}
+
+.forceScroll {
+  overflow: scroll !important;
+}
+// POST {email: ""}
+// /unlockstagetwo
+
+.resend {
+  font-family: brutal;
+  font-weight: 400;
+  text-decoration-line: underline;
+  color: #565656;
+  float: right;
+  cursor: pointer;
+  @apply text-xs sm:text-sm;
+}

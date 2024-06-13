@@ -1,0 +1,16 @@
+@import "/styles/variables.module.scss";
+
+.meterBase {
+  border-radius: 6px;
+  height: 7px;
+  width: 100%;
+  position: relative;
+  background: $battery-grey;
+}
+
+.meterValue {
+  position: absolute;
+  background: linear-gradient(270deg, #d4d6d7 0%, #818181 95.98%);
+  border-radius: 6px;
+  height: 7px;
+}

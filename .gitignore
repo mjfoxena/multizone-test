@@ -2,8 +2,9 @@
 
 # dependencies
 /node_modules
-/blog/node_modules
-/home/node_modules
+/in/node_modules
+/tr/node_modules
+/gl/node_modules
 
 /.pnp
 .pnp.js

@@ -1,0 +1,54 @@
+.press {
+    // background-image: url("../../public/images/about/grunge-background.svg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: #ececec;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  // Image slider 
+  .otherHorizontal {
+    @apply h-[300px] w-[95vw] sm:w-full mt-[20px] sm:mt-[-20px] pt-[15px] sm:pt-[20px] lg:pt-[45px] sm:h-[600px] overflow-x-auto overflow-y-hidden;
+  }
+  .otherHorizontal::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  @media only screen and (min-width: 576px) {
+    .image {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .about-text {
+      width: 100%;
+    }
+  }
+  
+  
+  // News Article
+  .newsArticleHorizontal::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .newsArticleHorizontal {
+    @apply h-[100%] sm:mt-[35px] pt-[15px] overflow-x-auto w-full overflow-y-hidden;
+  }
+  
+  
+  // videosSlider
+  .videoHorizontal {
+    @apply h-[100%] sm:mt-[70px] pt-[15px] sm:h-[746px] overflow-x-auto w-full overflow-y-hidden;
+  }
+  .videoHorizontal::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .videoSlide {
+    @apply mr-[9px] sm:mr-[24px] w-screen sm:w-full;
+    @media (max-width: 800px) {
+      width: 90vw !important;
+    }
+  }
+  

@@ -1,0 +1,11 @@
+.button {
+  // h-[87px]
+  @apply h-[87px] pl-6 pr-6 py-4 bg-white flex justify-between items-center lg:hover:bg-red-secondary lg:hover:text-white;
+}
+
+// For Sm and below
+@media screen and (max-width: 768px) {
+  .button {
+    @apply h-[50px];
+  }
+}

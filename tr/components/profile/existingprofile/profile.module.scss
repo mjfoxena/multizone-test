@@ -1,0 +1,65 @@
+@import "../../../styles/variables.module.scss";
+.background {
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden !important;
+}
+.eurostile {
+  font-family: Eurostile;
+}
+.brutal {
+  font-family: Brutal;
+}
+.disketMono {
+  font-family: Disket-mono;
+}
+.color {
+  color: #e8e8e8;
+}
+.color-grey {
+  color: #e2e2e2;
+}
+.color-grey-2 {
+  color: #979797;
+}
+.color-white {
+  color: $white;
+}
+.color-yellow {
+  color: #eca234;
+}
+.color-red {
+  color: #da4f46;
+}
+.color-dark-grey {
+  color: #5e5e5e;
+}
+.border {
+  border-bottom: 1px solid #bbbbbb;
+}
+.dashed {
+  border-bottom: 2px dashed #525252;
+}
+.bg-yellow {
+  background-color: #ffc83a;
+}
+.bg-grey {
+  background-color: #e4e4e4;
+}
+.hover-box {
+  display: none;
+  background: #2c2b2b;
+}
+.policy:hover + .hover-box {
+  display: block;
+  transition: all 0.8s ease;
+}
+.signout-arrow {
+  width: 9%;
+}
+.signoutImg {
+  position: relative !important;
+  width: 25% !important;
+  height: 40% !important;
+}

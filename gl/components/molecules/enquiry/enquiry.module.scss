@@ -1,0 +1,55 @@
+@import "../../../styles/variables.module.scss";
+
+.check {
+  //     display: flex;
+  //   flex-direction: column;
+  //   flex-wrap: nowrap;
+  @apply mr-[19px];
+}
+
+.checkboxText {
+  font-family: brutal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  color: #272727;
+  line-height: 20px;
+  @apply text-[12px] sm:text-[14px];
+}
+
+.check input[type="checkbox"] {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  color: $black;
+  background: #fff;
+  border: 1px solid #ed1c24;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 1.5px;
+    left: 5px;
+    width: 5px;
+    height: 10px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+  }
+  &:checked {
+    color: #ffff;
+    //   border-color: #7dc771;
+    background: #ed1c24;
+    &::before {
+      opacity: 1;
+    }
+    ~ label::before {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+}

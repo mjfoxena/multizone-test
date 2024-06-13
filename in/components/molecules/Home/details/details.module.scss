@@ -1,0 +1,86 @@
+@import "/styles/variables.module.scss";
+
+.details {
+  font-family: Eurostile;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+
+  @apply h-fit  p-6 pt-0 pb-0 mt-0 mb-16 sm:p-0 sm:mt-16 sm:mb-[150px] flex flex-col justify-center items-center;
+}
+
+.heading {
+  font-family: Eurostile;
+  font-weight: 400;
+  text-align: center;
+
+  @apply w-full h-fit sm:h-[180px]  text-[#FFFFFF] text-[16px] sm:text-[28px] sm:leading-[36px] hidden xl:flex justify-center items-center;
+}
+.headingM {
+  font-family: Eurostile;
+  font-weight: 400;
+  text-align: center;
+
+  @apply w-full h-fit  text-[#FFFFFF] text-[18px] leading-[28px] p-6 sm:hidden  justify-center items-center;
+}
+
+.Style.bgImage {
+  position: relative;
+}
+.title {
+  font-family: Disket-mono;
+  // font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ed3248;
+  @apply text-[22px] sm:text-[28px] 2xl:text-[36px];
+}
+
+.text1 {
+  font-family: Brutal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+
+  @apply absolute top-[84%] left-[49%] w-[30%] sm:text-[12px] 2xl:text-[16px] sm:leading-5 2xl:leading-7;
+}
+.text2 {
+  font-family: Brutal;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+
+  @apply absolute top-[44%] left-[17.5%] w-[66%];
+}
+.textDes {
+  font-family: Brutal;
+  // font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  @apply uppercase text-[10px] sm:text-[12px] 2xl:text-[16px];
+}
+.imageTitle {
+  font-family: Brutal;
+  // font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  @apply absolute bottom-2 left-4 2xl:bottom-6 2xl:left-6 uppercase text-[10px] xl:text-[12px] md:text-[16px] 2xl:text-[18px];
+}
+
+.text2Mob {
+  color: #fefefe;
+  text-align: center;
+  font-family: Brutal;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 166.667% */
+  @apply w-2/3 md:mt-[13.938rem] md:w-[38%] md:text-[12px];
+}

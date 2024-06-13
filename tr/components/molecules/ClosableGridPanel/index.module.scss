@@ -1,0 +1,48 @@
+.gridPanel {
+  @apply relative flex flex-col;
+  width: 75vw;
+  height: 100%;
+  padding: 4.7vw 6vw;
+  padding-bottom: 0vw;
+  background-size: 4.5vw 4.5vw;
+  background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+    linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+  @media (max-width: 800px) {
+    width: 100vw;
+    background-size: 10vw 10vw;
+  }
+}
+.plainPanel {
+  @apply relative flex flex-col;
+  width: 75vw;
+  height: 100%;
+  // padding: 6.5vw 6vw;
+  padding-bottom: 0vw;
+  background-size: 4.5vw 4.5vw;
+
+  @media (max-width: 800px) {
+    width: 100vw;
+    background-size: 10vw 10vw;
+  }
+}
+.close {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+  @media (max-width: 800px) {
+    top: 24px;
+    right: 24px;
+  }
+}
+.headerText {
+  position: absolute;
+  // left: 3%;
+  top: 5%;
+  cursor: pointer;
+  @media (max-width: 800px) {
+    top: 24px;
+    // right: 24px;
+    position: relative;
+  }
+}

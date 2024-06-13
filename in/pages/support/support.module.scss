@@ -1,0 +1,26 @@
+@import "/styles/variables.module.scss";
+.support{
+    background-image: url('../../public/images/contact/grunge-background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $background-grey;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.eurostile{
+    font-family: Eurostile;
+}
+.border{
+     border-bottom: 1px solid #9E9E9E;
+}
+.color{
+    color: #414141;
+}
+.brutal{
+    font-family:Brutal;
+}
+@media only screen and (max-width: 576px) {
+    .support{
+        height: 100%;
+    }
+}

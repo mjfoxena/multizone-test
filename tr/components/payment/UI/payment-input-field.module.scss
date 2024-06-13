@@ -1,0 +1,72 @@
+.input {
+  background: #eaeaea;
+  font-family: brutal;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  @apply text-[12px] ml-[12px] sm:ml-[24px] w-full;
+}
+.email {
+  font-family: brutal;
+  font-weight: 400;
+  color: #9f9f9f;
+
+  @apply mt-9 text-[14px] sm:text-[14px] sm:mt-[32px];
+}
+.inputbox {
+  background: #eaeaea;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 60px !important;
+  @apply h-[64px] w-full mt-[8px] sm:mt-[14px];
+}
+// .inputbox:focus-visible {
+//   border-color: #6e6d6d;
+// }
+
+// For Sm and below
+@media screen and (max-width: 768px) {
+  .inputbox {
+    background: #eaeaea;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px !important;
+    @apply h-[50px] w-full mt-[8px] sm:mt-[14px];
+  }
+  // To disable the profile icon in an input field on an iPhone
+  .inputbox ::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+  }
+
+  .dropdown {
+    background: #eaeaea;
+    border-radius: 4px;
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown {
+  background: #eaeaea;
+  border-radius: 4px;
+  height: 60px;
+  @apply h-[64px] w-full mt-[8px] sm:mt-[14px];
+}
+
+.dropdown button:hover {
+  background: #eaeaea;
+}
+
+.dropdown button:focus {
+  background: #eaeaea;
+  border-color: #eaeaea;
+}

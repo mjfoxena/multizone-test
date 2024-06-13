@@ -1,0 +1,85 @@
+@import "/styles/variables.module.scss";
+
+.regular {
+  font-weight: 400;
+}
+.meduim {
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+.black {
+  color: $black;
+}
+.black-secondary {
+  color: $black-secondary;
+}
+.red-primary {
+  color: $text-red-primary;
+}
+.gray-primary {
+  color: $text-grey-primary;
+}
+.gray-secondary {
+  color: $text-grey-secondary;
+}
+.gray-tertiary {
+  color: $text-grey-tertiary;
+}
+.gray-six {
+  color: $text-grey-5th-variant;
+}
+.gray-seven {
+  color: $text-grey-7;
+}
+.white {
+  color: $white;
+}
+.limitedText {
+  color: $limited-text;
+}
+.gray-quaternary {
+  color: $text-grey-quaternary;
+}
+.gray-five {
+  color: $text-grey-contact;
+}
+.silver-grey {
+  color: $silver-grey;
+}
+.brutal {
+  font-family: Brutal;
+}
+
+.disketMono {
+  font-family: Disket-mono;
+}
+
+.eurostile {
+  font-family: Eurostile;
+}
+.nunito {
+  // font-family: Nunito Sans;
+  font-family: Brutal; // Nunito font classes will be replaced by brutal font classes
+}
+
+.no-color {
+  color: $no-color;
+}
+.color-inherit {
+  color: inherit;
+}
+
+.light-grey {
+  color: $light-grey;
+}
+.subTextGrey {
+  color: $text-grey-subtext;
+}
+.titleTextBlack {
+  color: $text-title-black;
+}
+.overlay-heading {
+  color: $overlay-heading;
+}

@@ -1,0 +1,68 @@
+@import "/styles/variables.module.scss";
+
+.savings {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  @apply h-screen max-h-[650px] sm:max-h-[700px]  p-[6%]  flex justify-center items-center sm:pl-[10%]  sm:pr-[10%] sm:pb-0;
+}
+
+.savingsP {
+  @apply w-full h-fit;
+}
+
+.savingsH {
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Eurostile;
+  font-weight: 400;
+
+  @apply uppercase  text-[18px] sm:text-[28px] sm:leading-[36px] text-[#D9D9D9] tracking-widest;
+}
+
+.rate {
+  text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
+  font-family: Eurostile;
+  font-style: normal;
+  font-weight: 700;
+  @apply uppercase  text-[18px] sm:text-[28px] sm:leading-[36px] tracking-widest text-[#fff];
+}
+.sideTitle {
+  font-family: Brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @apply flex-initial w-[30%] self-center sm:text-[18px] text-[#FFF];
+}
+
+.desc {
+  color: #fff;
+  font-family: Brutal;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.487px; // desk and mob
+  opacity: 0.5;
+  @apply w-full  text-[10px] sm:text-[10px] sm:text-right;
+}
+
+.sideTitleMob {
+  color: #fff;
+  font-family: Brutal;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  @apply text-[14px];
+}
+
+.distanceTravelled {
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.3);
+  font-family: Brutal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  text-transform: uppercase;
+}

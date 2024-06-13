@@ -1,0 +1,40 @@
+@import "/styles/variables.module.scss";
+.about{
+    background-image: url('../../public/images/about/grunge-background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $background-grey;
+    width: 100%;
+    height: fit-content;
+}
+.eurostile{
+    font-family: Eurostile;
+}
+.brutal{
+    font-family:Brutal;
+}
+.border{
+    border-bottom: 1px solid #9E9E9E;
+}
+.color{
+    color: #414141;
+}
+.text-26px{
+    font-size: 26px;
+}
+.image{
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 2px !important;
+}
+@media only screen and (min-width: 576px) {
+    .image{
+        position: relative !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .about-text{
+        width: 100%;
+    }
+}

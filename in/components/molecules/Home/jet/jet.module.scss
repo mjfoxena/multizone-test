@@ -1,0 +1,5 @@
+@import "/styles/variables.module.scss";
+
+.jet {
+  @apply relative h-[550px]  p-6 pb-0 pt-0 sm:p-0  sm:h-screen w-full flex justify-center items-center sm:mb-12;
+}

@@ -1,0 +1,125 @@
+@import "/styles/variables.module.scss";
+
+.f99-image-overlay {
+  position: relative;
+}
+.f99-image {
+  height: 100%;
+  width: 100%;
+}
+.f99-logo {
+  width: 40%;
+  right: 4%;
+  @media (max-width: 800px) {
+    width: 65%;
+    height: 65%;
+    bottom: -22%;
+  }
+  @apply absolute sm:top-[40px] right-[18%] sm:right-[4%];
+}
+.f99-text-overlay {
+  background: url("/images/limited/backgroundVector.svg");
+  background-color: #17191d;
+  padding: 4.5% 5%;
+  position: relative;
+  overflow-x: hidden !important; // Hide empty spaces on right [@mrutyunjaya]
+}
+.f99-about-title {
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #d9d8d0;
+  @media (max-width: 800px) {
+    font-size: 14px;
+    line-height: 11px;
+  }
+}
+.f99-about-text {
+  margin-top: 40px;
+  font-family: brutal;
+  font-style: normal;
+  width: 638px;
+  height: 136px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #d9d8d0;
+  @media (max-width: 800px) {
+    margin-top: 55px;
+    width: 100%;
+    font-size: 12px;
+  }
+}
+.f99-specs-title {
+  margin-top: 55px;
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 52px;
+  color: #d9d8d0;
+  @media (max-width: 800px) {
+    margin-top: 120px;
+    font-size: 14px;
+    line-height: 11px;
+  }
+}
+.f99-specs {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 113px;
+}
+.f99-specs-row {
+  display: flex;
+  width: 51%;
+  margin-bottom: 50px;
+}
+.f99-specs-el {
+  width: 355px;
+  padding-right: 15%;
+  flex-shrink: 0;
+  @media (max-width: 800px) {
+    width: 175px;
+  }
+}
+.f99-spec-name {
+  margin-top: 17px;
+  font-family: brutal;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #828282;
+  @media (max-width: 800px) {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+.f99-spec-val {
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  @media (max-width: 800px) {
+    font-size: 10px;
+    line-height: 11px;
+  }
+}
+.f99-wheel-loading-1 {
+  @media only screen and (max-width: 1024px) and (min-width: 800px) {
+    width: 30%;
+  }
+  @apply absolute top-[4%] left-[5%] sm:left-[62%];
+}
+.f99-wheel-loading-2 {
+  @apply absolute left-[4%] sm:left-[4.8%] bottom-[8%] sm:bottom-[4.1%];
+}

@@ -1,0 +1,17 @@
+.configureBack {
+  @apply absolute cursor-pointer flex;
+  z-index: 10000;
+}
+.forcedButton {
+  position: fixed !important;
+  bottom: 0px !important;
+  width: 50% !important;
+}
+.relativeButton {
+  position: fixed !important;
+  bottom: 0px !important;
+  width: 100% !important;
+}
+.panel {
+  top: 65px !important;
+}

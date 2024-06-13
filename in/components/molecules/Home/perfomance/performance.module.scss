@@ -1,0 +1,144 @@
+@import "/styles/variables.module.scss";
+
+.performance {
+  font-family: Eurostile;
+  background-color: rgb(0, 0, 0);
+
+  @apply flex justify-center  items-center w-full;
+}
+
+.headWrapper {
+  // border: 1px solid red;
+  color: white;
+  @apply flex flex-col  xl:flex-row w-full h-full xl:w-[80%]  xl:h-screen xl:max-h-[700px] 2xl:max-h-[800px] xl:mt-[0%]  xl:mb-[0%];
+}
+
+.vision {
+  color: #fff;
+  text-align: center;
+  font-family: Brutal;
+  // font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  @apply text-[12px] sm:text-[18px];
+}
+
+.accelerate {
+  color: #fff;
+  // text-align: center;
+  font-family: Eurostile;
+  // font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  // line-height: 100px; /* 250% */
+  @apply text-[18px] sm:text-[28px] sm:leading-[36px];
+}
+
+.title {
+  font-family: Brutal;
+  @apply mb-0 mt-0 p-4 pl-0;
+}
+.titleMobile {
+  font-family: Brutal;
+  @apply text-[12px] sm:text-[18px] mt-6;
+}
+.rigthside {
+  border-left: 1px solid;
+  border-image: linear-gradient(
+    to bottom,
+    #6b010d 0%,
+    #ed3248 100%,
+    #6b010d 100%
+  );
+  border-image-slice: 1;
+  //   background-color: aqua;
+  @apply w-[60%]  h-[100%] hidden xl:flex flex-col gap-0;
+}
+
+.category {
+  font-family: Eurostile;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  // color: #565c5f;
+  // 2xl:text-[2rem]
+  @apply flex   items-center gap-[8px] sm:gap-[16px] w-full  sm:h-[80%] text-[18px] sm:text-[24px];
+}
+.stat {
+  font-family: Disket-mono;
+  // 2xl:text-[2rem]
+  @apply text-[14px] sm:text-[20px] font-[400];
+}
+.descSection {
+  .desc {
+    font-family: Brutal;
+
+    @apply text-[14px] w-[100%] pl-4 pt-4 h-full leading-[24px];
+  }
+
+  @apply w-full flex h-[12%]  justify-between items-start;
+}
+
+.stat2 {
+  color: #ff0436;
+  font-family: Eurostile;
+  font-weight: 700;
+  @apply text-[38px] pt-2;
+}
+.imageTransition {
+  @apply w-full h-[70%];
+}
+
+.stat2Mobile {
+  color: #ed3248;
+  font-family: Eurostile;
+  font-weight: 700;
+  @apply text-[24px]  xl:hidden  -mt-2  z-50;
+}
+
+.descMob {
+  font-family: Brutal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  @apply text-[12px] xl:hidden w-[100%] md:max-w-[97%] xl:w-[100%] mb-4;
+}
+
+.downloadSpec {
+  font-family: Brutal;
+  // font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  // 2xl:text-[1rem]
+
+  @apply text-[12px] flex justify-start items-center  text-white mt-4 xl:mt-0  cursor-pointer;
+}
+
+.wheelLoading {
+  position: absolute;
+  @apply mt-[-10px] ml-[25px]  w-[250px] -top-52 -right-56 sm:w-[486px] sm:h-[255px] sm:mt-[0px];
+}
+
+.wheelLoadingMob {
+  position: absolute;
+
+  @apply w-[511px] h-[100px] -top-56 -right-52  sm:hidden -mr-1;
+}
+
+.timerFill {
+  height: 2px;
+  background-color: #da4f46;
+  transition: width 1s linear;
+}
+
+.line {
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: transparent;
+}

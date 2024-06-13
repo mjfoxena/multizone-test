@@ -1,0 +1,38 @@
+.sidePanel {
+  position: fixed;
+  top: 4rem;
+  bottom: 0;
+  min-width: fit-content;
+  right: 0;
+  // box-shadow: 0px 1px 3px black;
+  background-color: white;
+  z-index: 100;
+
+  @media (max-width: 800px) {
+    // Allow full screen :@Mrutyunjaya
+    position: fixed;
+    top: 0;
+    bottom: 10;
+    left: 10;
+    right: 10;
+    // Closed
+  }
+}
+.sidePanelLimited {
+  position: fixed;
+  top: 4rem;
+  bottom: 0;
+  min-width: fit-content;
+  right: 0;
+  // box-shadow: 0px 1px 3px black;
+  background-color: rgb(15, 15, 15);
+  z-index: 100;
+
+  @media (max-width: 800px) {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

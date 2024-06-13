@@ -1,0 +1,40 @@
+.gallery{
+    // width: 100%;
+    
+    @apply flex w-full  h-fit pt-4 sm:pt-0 sm:w-[100vw] sm:h-fit ;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    // border: 1px solid red;
+    // background-image: url('/images/home/newhome/actionShorts/actionShot.webp'); 
+    // background-size: cover; 
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // transition: 0.5s;
+    // animation-name: animate;
+    // animation-direction: normal;
+    // animation-play-state: running;
+    // animation-timing-function: ease-in-out;
+    // animation-duration: 15s;
+    // animation-fill-mode: forwards;
+    // animation-iteration-count: infinite;
+}
+
+// @keyframes animate{
+//     0%{
+//         background-image: url('/images/home/newhome/actionShorts/actionShot1.webp'); 
+//     }
+//     25%{
+//         background-image: url('/images/home/newhome/actionShorts/actionShot2.webp'); 
+//     }
+//     50%{
+//         background-image: url('/images/home/newhome/actionShorts/actionShot3.webp'); 
+//     }
+//     75%{
+//         background-image: url('/images/home/newhome/actionShorts/actionShot4.webp'); 
+//     }
+//     100%{
+//         background-image: url('/images/home/newhome/actionShorts/actionShot1.webp'); 
+//     }
+// }

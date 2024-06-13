@@ -1,0 +1,71 @@
+@import "/styles/variables.module.scss";
+
+.eurostile {
+  font-family: Eurostile;
+}
+.brutal-sidebar {
+  font-family: brutal;
+  display: flex;
+}
+.brutalSubhead {
+  margin-bottom: 6px;
+
+  // color: #000;
+  text-align: left;
+  font-family: Brutal;
+  // font-size: 26.667px;
+  font-style: normal;
+  font-weight: 500;
+  // line-height: 50.667px; /* 190% */
+  // letter-spacing: 0.267px;
+  @apply text-[14px]  tracking-[0.2px] leading-[24px]  xl:tracking-[0.267px]  xl:text-[18px] xl:leading-[36px];
+}
+
+.brutalSubtext {
+  // font-size: 21.333px;
+  font-style: normal;
+  font-weight: 400;
+  // line-height: 37.333px; /* 175% */
+  // letter-spacing: 0.267px;
+  font-family: brutal;
+  text-align: left;
+  margin-bottom: 6px;
+  @apply text-[14px]  tracking-[0.2px]  xl:text-[14px] xl:leading-[28px] xl:tracking-[0.267px];
+}
+.footerText {
+  font-family: brutal;
+  font-style: normal;
+  // color: #565656;
+  display: flex;
+  // font-size: 16px;
+  font-weight: 400;
+  // line-height: 37.333px; /* 233.333% */
+  // letter-spacing: 0.267px;
+  @apply text-[10px] leading-[24px] tracking-[0.2px] xl:text-[10px] xl:leading-[36px] xl:tracking-[0.267px];
+}
+
+.queriesContact {
+  // color: #565656;
+  font-family: Brutal;
+  // font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  // line-height: 37.333px; /* 233.333% */
+  // letter-spacing: 0.267px;
+  @apply text-[10px] leading-[24px] xl:text-[10px] xl:leading-[36px] tracking-[0.267px];
+}
+.backgroundColor {
+  background-color: $text-grey-primary;
+  width: 100vw;
+}
+
+.footerDesc {
+  // color: #000;
+  font-family: Brutal;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  // line-height: 45.333px; /* 125.926% */
+  // letter-spacing: 0.267px;
+  @apply text-[16px]  tracking-[0.2px] leading-[20px] sm:text-[24px] sm:leading-[30px] sm:tracking-[0.267px];
+}

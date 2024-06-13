@@ -1,0 +1,43 @@
+.disketmono {
+  font-family: Disket-mono;
+}
+.heading {
+  font-family: brutal;
+  font-weight: 500;
+  float: left;
+  @apply text-[28px] mt-[11px] sm:text-[36px] sm:mt-[42px];
+}
+.border {
+  border-bottom: 3px solid #dd5b5b;
+}
+.brutal {
+  font-family: Brutal;
+}
+.color-red {
+  color: #dd5b5b;
+}
+.color-grey {
+  color: #8a8a8a;
+}
+.procced {
+  background: #000000;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  @apply w-full pl-7 pr-7 sm:pl-16 sm:pr-28 py-4 flex flex-row sm:py-8;
+}
+.proccedText {
+  font-family: brutal;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  @apply text-sm sm:text-[20px];
+}
+@media only screen and (min-width: 576px) {
+  .procced {
+    width: 50%;
+  }
+}

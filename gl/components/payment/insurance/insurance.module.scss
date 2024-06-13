@@ -1,0 +1,48 @@
+@import "../../../styles//variables.module.scss";
+
+.openVariantPanel {
+  @apply grid mt-16;
+  grid-template-columns: repeat(3, 1fr);
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+    @apply mt-8;
+  }
+}
+
+.panel {
+  top: 65px !important;
+}
+.configureBack {
+  @apply cursor-pointer flex;
+}
+.forcedButton {
+  position: fixed !important;
+  bottom: 0px !important;
+  width: 50% !important;
+}
+.relativeButton {
+  position: fixed !important;
+  bottom: 0px !important;
+  width: 100% !important;
+}
+
+// .sidepanel_sidePanel__iP8Jx {
+// }
+
+.insurance {
+  margin-top: 26px;
+}
+
+.modal-bg {
+  background-color: gainsboro;
+}
+.infoIcon {
+  border: 1px solid black;
+  border-radius: 100%;
+  height: 16px;
+  @apply px-1.5 pt-0 flex justify-center text-center items-center text-[10px];
+}
+
+.insurance .subheader {
+  margin-top: 14px;
+}

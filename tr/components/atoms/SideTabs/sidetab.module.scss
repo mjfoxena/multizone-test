@@ -1,0 +1,16 @@
+.sideTabs{
+    border-bottom: 2px solid #CF342A;
+    @apply pb-3 flex justify-between;
+}
+
+.toggleTabs{
+    @apply flex;
+
+    .eachTab{
+        @apply px-3 py-1 min-w-max text-[10px] sm:text-[8px] lg:text-[18px];
+    }
+    .selected{
+        border: 1px solid black;
+        @apply bg-white;
+    }
+}

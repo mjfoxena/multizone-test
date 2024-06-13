@@ -1,0 +1,19 @@
+@import "/styles/variables.module.scss";
+
+.root {
+  background-color: $background-grey;
+  border-bottom: $border-grey 1px solid;
+  @apply w-screen flex h-16 justify-between items-center;
+  .imageWrapper {
+    @apply pl-4;
+  }
+  .navItemsWrapper {
+    display: flex;
+    @apply space-x-20 py-2;
+  }
+  .menuWrapper {
+    @apply cursor-pointer h-16 flex justify-center px-4;
+    border-left: $border-grey 1px solid;
+    border-bottom: $border-grey 1px solid;
+  }
+}

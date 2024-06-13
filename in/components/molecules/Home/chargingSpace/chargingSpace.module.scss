@@ -1,0 +1,99 @@
+@import "/styles/variables.module.scss";
+
+.chargingSpace {
+  background-color: black;
+  width: 100%;
+
+  @apply flex flex-col xl:flex-row  h-fit xl:h-[100vh] xl:max-h-[800px] 2xl:max-h-full sm:w-full  pt-0 pb-0 mb-6 sm:mb-0 sm:pt-0 xl:mt-16 md:mt-[20%];
+}
+
+.charger {
+  @apply relative  w-full h-full xl:w-[40%] md:w-full xl:h-[100%] flex flex-col justify-between items-center bg-[#000];
+}
+.superNova {
+  @apply relative  w-full xl:w-[60%] md:w-full h-fit xl:h-full;
+}
+
+.superNovaImg {
+  @apply w-full sm:sm:w-fit h-[50vh] xl:h-full;
+}
+
+.chargerBg {
+  @apply absolute bottom-0 left-0  w-fit h-1/4;
+}
+.chargerImg {
+  @apply absolute top-0 right-0 z-50 w-fit h-full;
+}
+
+.superNovaDesc {
+  @apply hidden overflow-hidden  absolute sm:p-12 gap-8 sm:pl-2 top-0 left-0 z-50 xl:flex flex-col justify-start  w-[75%] h-full text-white;
+}
+.superNovaTitle {
+  font-family: Brutal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  @apply hidden xl:block w-full sm:pl-8 text-[20px] sm:text-[14px] 2xl:text-[20px];
+}
+.superNovaTitlemob {
+  font-family: Brutal;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  @apply uppercase md:text-[16px] md:mb-1;
+}
+.super {
+  font-family: Eurostile;
+  font-weight: 700;
+}
+.uvSuperNova {
+  font-family: Eurostile;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+
+  @apply hidden xl:flex flex-col sm:gap-6 2xl:gap-8 uppercase sm:pl-8 text-[32px] sm:text-[60px] leading-[32px] sm:leading-[60px] 2xl:text-[60px] 2xl:leading-[60px];
+}
+.uvSuperNovamob {
+  font-family: Eurostile;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  @apply uppercase md:text-[54px];
+}
+.superNovatext {
+  font-family: Brutal;
+  font-weight: 400;
+  @apply flex sm:text-[12px] 2xl:text-[14px] mt-8   w-2/3 pl-8 leading-6 2xl:leading-[24px];
+}
+.superNovaStat {
+  color: #fff;
+  font-family: Eurostile;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @apply text-[18px] xl:text-[18px] md:text-[24px] md:tracking-wider 2xl:text-[20px];
+}
+.superNovaStatDesc {
+  color: #fff;
+  font-family: Disket-mono;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @apply text-[12px]  xl:text-[12px] md:text-[13px] 2xl:text-[12px];
+}
+.superNovatextmob {
+  font-family: Brutal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  @apply text-white h-[60vh] w-full flex flex-col justify-center items-center gap-10 xl:hidden md:text-[13px];
+}

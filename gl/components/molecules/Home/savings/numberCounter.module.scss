@@ -1,0 +1,25 @@
+.inputNumber::-webkit-inner-spin-button,
+.inputNumber::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-number-input input:focus {
+  outline: none !important;
+}
+
+.custom-number-input button:focus {
+  outline: none !important;
+}
+
+
+.counterNum{
+  color: #FFF;
+text-align: center;
+font-family: Brutal;
+// font-size: 48px;desk
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+@apply sm:text-[30px];
+}

@@ -1,0 +1,45 @@
+@import "/styles/variables.module.scss";
+
+.variantCard {
+  background-color: $text-grey-tertiary;
+  border-radius: 4px;
+  padding: 22px 24px;
+  width: 100%;
+  &.selected {
+    border: 1px solid $text-red-primary;
+  }
+  .infoIcon {
+    border: 1px solid black;
+    border-radius: 100%;
+    height: 16px;
+    @apply mt-[-2px] px-1.5 pt-0 flex justify-center text-center items-center text-[10px];
+  }
+}
+.variantCardLimited {
+  background-color: #212429;
+  border-radius: 4px;
+  padding: 22px 24px;
+  width: 100%;
+  &.selected {
+    border: 1px solid #ED1C24;
+    color: #ffffff;
+  }
+  .infoIcon {
+    border: 1px solid #555555;
+    border-radius: 100%;
+    height: 16px;
+    @apply mt-0.5 px-1.5 pt-0 flex justify-center text-center items-center text-[#555555] text-[10px];
+  }
+  .infoIconLimit {
+    border: 1px solid #757575;
+    border-radius: 100%;
+    height: 16px;
+    @apply mt-0.5 px-1.5 pt-0 flex justify-center text-center items-center text-[#757575] text-[10px];
+  }
+  .selectedInfoIcon {
+    border: 1px solid #ffffff;
+    border-radius: 100%;
+    height: 16px;
+    @apply mt-0.5 px-1.5 pt-0 flex justify-center text-center items-center text-[#ffffff] text-[10px];
+  }
+}

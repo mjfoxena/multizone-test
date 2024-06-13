@@ -1,0 +1,37 @@
+import React, { useEffect } from "react";
+import Style from "../../pages/f99/f99.module.scss";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+const TechSpec = () => {
+  const controlBoxCharged = useAnimation();
+  const controlDna = useAnimation();
+  const controlMoon = useAnimation();
+  const [refMoon, inViewMoon] = useInView();
+  const boxVariant = {
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    hidden: { opacity: 0, y: 40 },
+  };
+  useEffect(() => {
+    if (inViewMoon) {
+      controlMoon.start("visible");
+    } else {
+      controlMoon.start("hidden");
+    }
+  }, [controlMoon, inViewMoon]);
+  return (
+    <>
+      <motion.div
+        ref={refMoon}
+        variants={boxVariant}
+        initial="hidden"
+        animate={controlMoon}
+        className={Style.limitedNumber}
+      >
+        <div>TECH SPECS</div>
+      </motion.div>
+    </>
+  );
+};
+
+export default TechSpec;

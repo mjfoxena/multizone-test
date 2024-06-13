@@ -1,0 +1,42 @@
+@import '../../../styles//variables.module.scss';
+.eurostile{
+    font-family: Eurostile;
+}
+.brutal{
+    font-family:Brutal;
+}
+.disketMono{
+    font-family: Disket-mono;
+}
+.color{
+    color: #E8E8E8;
+}
+.color-grey{
+    color: #E2E2E2;
+}
+.color-grey-2{
+    color:  #979797;
+}
+.color-white{
+    color: $white;
+}
+.border{
+    border-bottom: 1px solid #BBBBBB;
+}
+.bg-yellow{
+    background-color: #F26322;
+}
+.bg-grey{
+    background-color: #E4E4E4;
+}
+.bg-red{
+    background-color:  #D54D45;
+}
+.font-1xl{
+font-size: 7.3px;
+}
+@media only screen and (min-width: 500px) {
+    .font-1xl{
+        font-size: 14px;
+    }
+}

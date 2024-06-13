@@ -1,0 +1,125 @@
+@import "/styles/variables.module.scss";
+
+
+.batterySection{
+    font-family: Eurostile;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // padding: 10% 0 10% 0%;
+    overflow: hidden;
+    // border: 1px solid red;
+    position: relative;
+    @apply h-fit sm:h-[100%]  sm:max-h-[1024px] 2xl:max-h-[130vh];
+}
+
+
+
+
+.designText{
+font-family: Disket-mono;
+color: #FFF;
+text-align: center;
+// font-size: 40px;
+font-style: normal;
+font-weight: 400;
+// line-height: 100px; /* 250% */
+@apply text-[22px] sm:text-[32px] 2xl:text-[40px]  leading-[36px] sm:leading-[70px] 2xl:leading-[100px];
+}
+
+.designText2{
+    font-family: Brutal;
+
+    color: #FFF;
+    text-align: center;
+    // font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+@apply uppercase text-[12px] sm:text-[16px] 2xl:text-[20px] leading-[20px] sm:leading-[30px] 2xl:leading-[32px];
+
+}
+
+
+.title{
+    padding: 1em;
+  border: 0.25em solid;
+  position: relative;
+
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #000000;
+  }
+  
+  &::before {
+    top: -0.3em; // let it overlap a bit to prevent thin line which could appear during scaling in some browsers etc.
+    bottom: -0.3em;
+    left: 0.5em;
+    right: 0.5em;
+  }
+  
+  &::after{
+    left: -0.3em;
+    right: -0.3em;
+    top: 0.5em;
+    bottom: 0.5em;
+    
+  }
+    @apply  text-white z-50 border  border-[#3A3F4A] p-8 sm:p-8 2xl:p-12 w-[80%] sm:w-[35%] h-[80%]  sm:h-[70%] flex flex-col  justify-center items-center;
+}
+
+.videoTitle{
+    font-family: Disket-mono;
+// font-size: 24px;
+font-weight: 500;
+// line-height: 42px;
+letter-spacing: 0.01em;
+// text-align: right;
+position: relative;
+z-index: 1;
+
+    @apply text-[12px] leading-[24px] sm:text-[16px] 2xl:text-[20px] sm:leading-6 2xl:leading-8 uppercase text-left;
+
+}
+
+.videotext{
+    font-family: Brutal;
+    // font-size: 20px;
+    font-weight: 400;
+    // line-height: 20px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #6B7488;
+    position: relative;
+    z-index: 1;
+
+    @apply text-[12px] sm:text-[12px] leading-[14px] sm:leading-[20px] 2xl:text-[14px]  text-left ;
+
+}
+
+.videoTitleMob{
+  color: #FFF;
+font-family: Disket-mono;
+font-size: 14.672px;
+font-style: normal;
+font-weight: 400;
+line-height: 25.152px; /* 171.429% */
+letter-spacing: 0.44px;
+text-transform: uppercase;
+}
+.videotextMob{
+  color: #7C7F89;
+font-family: Brutal;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 166.667% */
+letter-spacing: 0.36px;
+}

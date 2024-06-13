@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext", "ES2021", "es2021"], // Allow ES2021
+    "jsx": "preserve",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "paths": {
+      "react": [ "./node_modules/@types/react" ]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noImplicitAny": false,
+    "incremental": true,
+
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "baseUrl": "./",
+  "paths": {
+    "@components/*": ["./components/*"],
+    "@atoms/*": ["./components/atoms*"],
+    "@molecules/*": ["./components/molecules*"],
+    "@containers/*": ["./containers/*"],
+    "@helpers/*": ["./helpers/*"],
+    "@constants/*": ["./constants/*"],
+    "@styles/*": ["./styles"],
+    "@utils/*": ["./utils"]
+  },
+  "include": [
+    "next-env.d.ts",
+    "./**/*.ts",
+    "./**/*.tsx",
+    ".next/types/**/*.ts",
+    ".",
+    "src/**/*.ts",
+    "src/**/*.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

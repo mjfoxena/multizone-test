@@ -1,0 +1,46 @@
+@import "/styles/variables.module.scss";
+
+.headingP {
+  font-family: Eurostile;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  @apply text-[#fff] text-[18px]  sm:text-[28px] sm:leading-[36px] uppercase;
+}
+
+.title {
+  font-family: Brutal;
+  @apply text-[15px] sm:text-[18px] font-medium tracking-normal text-left uppercase  overflow-hidden  text-white;
+}
+
+.desc {
+  font-family: Brutal;
+  font-weight: 400;
+  letter-spacing: 0em;
+  @apply text-[12px]  leading-[20px] first-letter:uppercase  text-[#B4BCC4] text-left   overflow-hidden w-[85%];
+}
+
+// News Article
+.newsArticleHorizontal::-webkit-scrollbar {
+  width: 0px;
+}
+
+.newsArticleHorizontal {
+  @apply h-[100%] sm:mt-[16px] pt-[15px] overflow-x-auto w-full overflow-y-hidden;
+}
+/* Firefox */
+.newsArticleHorizontal {
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* Safari */
+.newsArticleHorizontal::-webkit-scrollbar {
+  display: none; /* For Safari */
+}
+.heading {
+  font-family: Disket-mono;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: left;
+  @apply text-[#fff] text-[18px] sm:text-[24px];
+}
