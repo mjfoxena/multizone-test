@@ -1,21 +1,17 @@
-import Style from "./index.module.scss";
-import { TextElement } from "../../atoms/Texts";
-import VariantCard from "../../atoms/Cards/VariantCard";
 import Image from "next/image";
-import { useContext, useEffect, useState } from "react";
-import { NavbarContext } from "../../../contexts/NavbarContext";
-import {
-  useLimitedAvailableStatus,
-  useLimitedPricingDetails,
-} from "../../../queries/config";
 import { useRouter } from "next/router";
+import { useContext, useEffect, useState } from "react";
+import TotalFooter from "../../../containers/variants/sections/TotalFooter";
+import { NavbarContext } from "../../../contexts/NavbarContext";
+import { useLimitedPricingDetails } from "../../../queries/config";
 import { UpdateUserBooking } from "../../../services/configuratorService";
 import { setBookingConfig } from "../../../services/helper";
-import TotalFooter from "../../../containers/variants/sections/TotalFooter";
 import { ConfigFlow, ReferrerFlow } from "../../../utils/CookieManagement";
+import VariantCard from "../../atoms/Cards/VariantCard";
+import { TextElement } from "../../atoms/Texts";
+import Style from "./index.module.scss";
 
 const LIMITED_SPACE = "space edition";
-import React from "react";
 
 const LimitedConfigureStep = ({
   sidebarTab,
@@ -70,6 +66,7 @@ const LimitedConfigureStep = ({
 
   // @ts-ignore
   const categories = [
+    // @ts-ignore
     ...new Set(
       (pricingDetails?.items || []).map((item) => item.category) as any
     ),
@@ -77,6 +74,7 @@ const LimitedConfigureStep = ({
 
   // @ts-ignore
   const getSubcategories = (category): string[] => [
+    // @ts-ignore
     ...new Set(
       pricingDetails?.items
         .filter((e) => e.category === category)

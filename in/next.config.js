@@ -46,8 +46,12 @@ const nextConfig = {
   async rewrites() {
     return [
       {
+        source: "/:path*", // Default root path
+        destination: `/in/:path*`, // Re Route to default /in path
+      },
+      {
         source: "/in/:path*", // Default root path
-        destination: `/in:path*`, // Default path
+        destination: `/in/:path*`, // Default path
       },
       {
         source: "/tr",
