@@ -3,15 +3,14 @@ const { TURKIYE_BASE_URL, GLOBAL_BASE_URL, INDIA_BASE_URL } = process.env;
 
 console.log("TURKIYE_BASE_URL:===>", TURKIYE_BASE_URL);
 console.log("GLOBAL_BASE_URL:===>", GLOBAL_BASE_URL);
-console.log("Process Env:===>", process.env);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  reactStrictMode: true,
-  swcMinify: true,
+  // reactStrictMode: true,
+  // swcMinify: true,
   experimental: {}, // Remove the invalid option 'appDir'
   images: {
     minimumCacheTTL: 60000,
@@ -51,7 +50,7 @@ const nextConfig = {
     return [
       {
         source: "/:path*", // Default root path
-        destination: `/in/:path*`, // Re Route to default /in path
+        destination: `/:path*`, // Re Route to default /in path
       },
       {
         source: "/in/:path*", // Default root path
@@ -59,19 +58,19 @@ const nextConfig = {
       },
       {
         source: "/tr",
-        destination: `${TURKIYE_BASE_URL}/tr`,
+        destination: `https://uv-turkiye.vercel.app/tr`,
       },
       {
         source: "/tr/:path*",
-        destination: `${TURKIYE_BASE_URL}/tr/:path*`,
+        destination: `https://uv-turkiye.vercel.app/tr/:path*`,
       },
       {
         source: "/gl",
-        destination: `${GLOBAL_BASE_URL}/gl`,
+        destination: `https://uv-global.vercel.app/gl`,
       },
       {
         source: "/gl/:path*",
-        destination: `${GLOBAL_BASE_URL}/gl/:path*`,
+        destination: `https://uv-global.vercel.app/gl/:path*`,
       },
       // {
       //   source: "/in",
@@ -278,4 +277,7 @@ const nextConfig = {
   },
 };
 
+nextConfig.rewrites().then((res) => {
+  console.log("nextConfig.rewrites:===>", res);
+});
 module.exports = nextConfig;
