@@ -1,6 +1,10 @@
 require("dotenv").config();
 const { TURKIYE_BASE_URL, GLOBAL_BASE_URL, INDIA_BASE_URL } = process.env;
 
+console.log("TURKIYE_BASE_URL:===>", TURKIYE_BASE_URL);
+console.log("GLOBAL_BASE_URL:===>", GLOBAL_BASE_URL);
+console.log("Process Env:===>", process.env);
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -23,11 +27,11 @@ const nextConfig = {
   // output: "export",
   // distDir: "out",
 
-  compiler: {
-    removeConsole:
-      process.env.NODE_ENV === "production" ||
-      process.env.ENVRONMENT === "production",
-  },
+  // compiler: {
+  //   removeConsole:
+  //     process.env.NODE_ENV === "production" ||
+  //     process.env.ENVRONMENT === "production",
+  // },
   serverRuntimeConfig: {}, // only available on server
   publicRuntimeConfig: {
     // Will be available on both server and client
