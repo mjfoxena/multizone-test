@@ -72,10 +72,10 @@ const nextConfig = {
         source: "/gl/:path*",
         destination: `https://uv-global.vercel.app/gl/:path*`,
       },
-      // {
-      //   source: "/in",
-      //   destination: `${INDIA_BASE_URL}/in`,
-      // },
+      {
+        source: "/root",
+        destination: `https://ultraviolette.com`,
+      },
       // {
       //   source: "/in/:path*",
       //   destination: `${INDIA_BASE_URL}/in/:path*`,

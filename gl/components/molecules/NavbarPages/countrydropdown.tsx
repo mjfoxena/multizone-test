@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
 import { Menu } from "@headlessui/react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { Country, getCountry } from "../../../services/LocationServices";
 
@@ -104,7 +104,10 @@ const CountryDropdown: React.FC<CountryDropdownProps> = ({ theme }) => {
             <Menu.Item key={country.name}>
               {({ active }) => (
                 <button
-                  onClick={() => setSelectedCountry(country)}
+                  onClick={() => {
+                    setSelectedCountry(country);
+                    router.push(`/tr`);
+                  }}
                   className="flex justify-between items-center w-full px-4 py-2 text-sm text-left"
                 >
                   <h2
